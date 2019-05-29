@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/all.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header>
+        <section class="searchDivs">
+            <i class="fab fa-facebook"></i>
+            <div class="searchDiv">
+                <input type="text" name="search" class="search" placeholder="Search">
+                <i class="fas fa-search"></i>
+            </div>
+
+        </section>
+        <section class="nav">
+            <a class="personalButton" href="#">
+                <div class="img"><img src="images/myphoto.jpg"></div>
+                <h6>Taha</h6>
+            </a>
+            <a class="home" href="#">
+                <h6>Home</h6>
+            </a>
+            <a class="home" href="#">
+                <h6>Create</h6>
+            </a>
+            <i class="fas fa-user-friends"></i>
+            <i class="fab fa-facebook-messenger"></i>
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-question-circle"></i>
+        </section>
+    </header>
+    <section class="backHeader"></section>
+    <article>
+        <section class="newsSide">
+            <section class="properties">
+                <section class="apps">
+                    <div class="propertiesHeader">
+                        <img src="images/myphoto.jpg">
+                        <span>Taha Mohamed</span>
+                    </div>
+                    <div class="appsDiv">
+                        <div>
+                            <img class="appImg" src="images/iconfinder_social-33_1591895.png">
+                            <p>Messenger</p>
+                        </div>
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                    <div class="appsDiv watch">
+                        <div>
+                            <img class="appImg" src="images/watch.PNG">
+                            <p>Watch</p>
+                        </div>
+                        <i class="fas fa-circle watchI"></i>
+                    </div>
+                    <div class="appsDiv">
+                        <div>
+                            <img class="appImg" src="images/06-512.png">
+                            <p>Marketplace</p>
+                        </div>
+                        <i></i>
+                    </div>
+                    </div>
+                </section>
+                <section class="apps">
+                    <div class="propertiesHeader2">
+                        <p>Shortcuts</p>
+                    </div>
+                    <div class="appsDiv">
+                        <div>
+                            <i class="appImg fas fa-stream"></i>
+                            <p>Taha Mohamed</p>
+                        </div>
+                        <i></i>
+                    </div>
+                    <div class="appsDiv">
+                        <div>
+                            <i class="appImg fas fa-stream"></i>
+                            <p>Taha Mohamed</p>
+                        </div>
+                        <i></i>
+                    </div>
+                </section>
+            </section>
+            <section class="timeline">
+                <div class="createPost">
+                    <p class="cHeader">Create post</p>
+                    <div class="createContent">
+                        <img src="images/myphoto.jpg">
+                        <div class="textarea">
+                            <textarea placeholder="What's in your mind Taha" name="postContent"></textarea>
+                        </div>
+                    </div>
+                    <div class="imgs">
+                        <!-- <img src="images/myphoto.jpg"> -->
+                        
+                    </div>
+                    <div class="cfooter">
+                        <input type="file" style="display: none" name="imgFile" multiple>
+                        <button onclick="getImg()">Photo/Video</button>
+                        <button onclick="post(this)">Share</button>
+                    </div>
+                </div>
+                <div class="posts">
+                    <div class="post">
+                        <div class="postHeader">
+                            <div>
+                                <img src="images/myphoto.jpg">
+                                <h3>Taha Saleh</h3>
+                            </div>
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                        <div class="postContent">
+                            <p>لا اله الا الله</p>
+                            <img src="images/myphoto.jpg">
+                        </div>
+                        <div class="postFooter">
+                            <div class="footerInfo">
+                                <div class="likes">
+                                    <i class="fas fa-heart"></i>
+                                    <p>13K</p>
+                                </div>
+                                <div class="share">
+                                    <a href="#">12K Comments</a>
+                                    <a href="#">5.3K Shares</a>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="footerButtons">
+                                <button><i class="fas fa-thumbs-up"></i>Like</button>
+                                <button><i class="far fa-comment-alt"></i>Comment</button>
+                                <button><i class="fas fa-share"></i>Share</button>
+                            </div>
+                            <hr class="myHr">
+                            <div class="comments">
+                                <div class="createcomment">
+                                    <img src="images/myphoto.jpg">
+                                    <input type="text" name="comment" placeholder="Write a comment...">
+                                </div>
+                                <div class="comment">
+                                    <img src="images/myphoto.jpg">
+                                    <span>
+                                        احلي مسا عليك يا ابوالصحاب😂😂😂
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="postHeader">
+                            <div>
+                                <img src="images/myphoto.jpg">
+                                <h3>Taha Saleh</h3>
+                            </div>
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                        <div class="postContent">
+                            <p>لا اله الا الله</p>
+                            <img src="images/the.rock.jpg">
+                        </div>
+                        <div class="postFooter">
+                            <div class="footerInfo">
+                                <div class="likes">
+                                    <i class="fas fa-heart"></i>
+                                    <p>13K</p>
+                                </div>
+                                <div class="share">
+                                    <a href="#">12K Comments</a>
+                                    <a href="#">5.3K Shares</a>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="footerButtons">
+                                <button><i class="fas fa-thumbs-up"></i>Like</button>
+                                <button><i class="far fa-comment-alt"></i>Comment</button>
+                                <button><i class="fas fa-share"></i>Share</button>
+                            </div>
+                            <hr class="myHr">
+                            <div class="comments">
+                                <div class="createcomment">
+                                    <img src="images/myphoto.jpg">
+                                    <input type="text" name="comment" placeholder="Write a comment...">
+                                </div>
+                                <div class="comment">
+                                    <img src="images/myphoto.jpg">
+                                    <span>
+                                        احلي مسا عليك يا ابوالصحاب😂😂😂
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="interest">
+                <div class="stories">
+                    <div class="storiesHeader">
+                        <span>Stories</span>
+                        <div>
+                            <a href="#">Archive</a> . <a href="#">Setting</a>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <img src="images/mai helmy.jpg">
+                        <div>
+                            <h3>Mai Helmy</h3>
+                            <span>20 Hours ago</span>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <img src="images/hossam heikal.jpg">
+                        <div>
+                            <h3>Hossam Heikal</h3>
+                            <span>20 Hours ago</span>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <img src="images/hossam heikal.jpg">
+                        <div>
+                            <h3>Hossam Heikal</h3>
+                            <span>20 Hours ago</span>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <img src="images/hossam heikal.jpg">
+                        <div>
+                            <h3>Hossam Heikal</h3>
+                            <span>20 Hours ago</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="ChateSide">
+            <section class="games">
+                <div class="ChateSideHeader">
+                    <p>INSTANT GAMES</p>
+                    <a href="#">More</a>
+                </div>
+                <div class="sideCategory">
+                    <i class="fas fa-chevron-left"></i>
+                    <div>
+                        <img src="images/myphoto.jpg">
+                        <img src="images/myphoto.jpg">
+                        <img src="images/myphoto.jpg">
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <hr class="hrAside">
+                <div class="ChateSideHeader">
+                    <p>YOUR GAMES</p>
+                    <a href="#">More</a>
+                </div>
+                <div class="sideCategory">
+                    <i class="fas fa-chevron-left"></i>
+                    <div>
+                        <img src="images/myphoto.jpg">
+                        <img src="images/myphoto.jpg">
+                        <img src="images/myphoto.jpg">
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <hr>
+                <section class="chateList">
+                    <ul>
+                        <li>
+                            <img src="images/myphoto.jpg">
+                            <p>Taha Mohamed</p>
+                            <i class="fas fa-circle"></i>
+                        </li>
+                        <li>
+                            <img src="images/myphoto.jpg">
+                            <p>Taha Mohamed</p>
+                            <i class="fas fa-circle"></i>
+                        </li>
+                        <li>
+                            <img src="images/myphoto.jpg">
+                            <p>Taha Mohamed</p>
+                            <i class="fas fa-circle"></i>
+                        </li>
+                        <li>
+                            <img src="images/myphoto.jpg">
+                            <p>Taha Mohamed</p>
+                            <i class="fas fa-circle"></i>
+                        </li>
+                        <li>
+                            <img src="images/myphoto.jpg">
+                            <p>Taha Mohamed</p>
+                            <i class="fas fa-circle"></i>
+                        </li>
+                        <li>
+                            <img src="images/myphoto.jpg">
+                            <p>Taha Mohamed</p>
+                            <i class="fas fa-circle"></i>
+                        </li>
+                        <li>
+                            <img src="images/myphoto.jpg">
+                            <p>Taha Mohamed</p>
+                            <i class="fas fa-circle"></i>
+                        </li>
+                        <li>
+                            <img src="images/myphoto.jpg">
+                            <p>Taha Mohamed</p>
+                            <i class="fas fa-circle"></i>
+                        </li>
+                        <li>
+                            <img src="images/myphoto.jpg">
+                            <p>Taha Mohamed</p>
+                            <i class="fas fa-circle"></i>
+                        </li>
+                        <li>
+                            <img src="images/myphoto.jpg">
+                            <p>Taha Mohamed</p>
+                            <i class="fas fa-circle"></i>
+                        </li>
+                        <li>
+                            <img src="images/myphoto.jpg">
+                            <p>Taha Mohamed</p>
+                            <i class="fas fa-circle"></i>
+                        </li>
+                        <li>
+                            <img src="images/myphoto.jpg">
+                            <p>Taha Mohamed</p>
+                            <i class="fas fa-circle"></i>
+                        </li>
+
+                    </ul>
+
+                </section>
+            </section>
+
+            <div class="searchChate">
+                <input type="text" placeholder="Search">
+            </div>
+
+        </section>
+    </article>
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>
